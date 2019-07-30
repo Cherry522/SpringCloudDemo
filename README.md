@@ -22,6 +22,9 @@ docker run -d \
 --advertise-client-urls http://10.5.7.245:2379 --listen-client-urls http://0.0.0.0:2379
 ```
 ##### 浏览器访问etcd
-在浏览器页面输入：`http://localhost:2379/v2/keys/spring/cloud/discovery`
+在浏览器页面输入：`http://localhost:2379/v2/keys/spring/cloud/discovery`出现如下页面：
 ![Image text](https://github.com/Cherry522/SpringCloudDemo/blob/master/README-img/etcd-1.jpg)
 
+##### 注册服务到etcd后
+启动config服务，config服务注册到etcd后，再次访问etcd，显示页面如下：
+![Image text](https://github.com/Cherry522/SpringCloudDemo/blob/master/README-img/etcd-2.jpg)
