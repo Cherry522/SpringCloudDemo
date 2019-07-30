@@ -23,4 +23,5 @@ docker run -d \
 ```
 ##### 浏览器访问etcd
 在浏览器页面输入：`http://localhost:2379/v2/keys/spring/cloud/discovery`
+![Image text](https://github.com/Cherry522/SpringCloudDemo/blob/master/README-img/etcd-1.jpg)
 
