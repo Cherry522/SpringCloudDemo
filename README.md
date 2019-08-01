@@ -28,3 +28,11 @@ docker run -d \
 ##### 注册服务到etcd后
 启动config服务，config服务注册到etcd后，再次访问etcd，显示页面如下：
 ![Image text](https://github.com/Cherry522/SpringCloudDemo/blob/master/README-img/etcd-2.jpg)
+
+##### 通过在etcd上查看服务是否具体启动成功
+浏览器访问：`http://localhost:2379/v2/keys/在etcd上的key的名字`
+比如:`http://localhost:2379/v2/keys/spring/cloud/discovery/config`
+![Image text](https://github.com/Cherry522/SpringCloudDemo/blob/master/README-img/etcd-3.jpg)
+
+
+
